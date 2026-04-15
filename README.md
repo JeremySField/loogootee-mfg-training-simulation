@@ -24,6 +24,13 @@ The simulation company is named Loogootee Manufacturing, Inc. — a fictional pr
 | **Rack** | 42U open frame · wheeled |
 | **Simulation** | Two-site precision metal stamping — Loogootee Mfg., Inc. |
 
+## Rack Photos
+
+<p align="center">
+  <img src="06_rack_documentation/rack_photos/IMG_5098.jpeg" width="45%"/>
+  <img src="06_rack_documentation/rack_photos/IMG_5101.jpeg" width="45%"/>
+</p>
+
 ---
 
 ## Controllers
