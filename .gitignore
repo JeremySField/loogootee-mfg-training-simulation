@@ -77,3 +77,9 @@ node_modules/
 # EDS/GSD/GSDML/IODD device description files, example projects,
 # packet captures, video files, VM images, zip archives —
 # all kept intentionally as project reference material.
+
+# Large vendor files - store locally only
+*.exe
+08_io_link_implementation/ifm_al1590_vendor_docs_programming/Firmware_*
+08_io_link_implementation/ifm_al1590_vendor_docs_programming/Startup_Package_AL1x0x*
+08_io_link_implementation/ifm_al1590_vendor_docs_programming/Startup_Package_AL1x2x_EIP_PLC_Keyence*
