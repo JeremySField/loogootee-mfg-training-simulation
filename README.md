@@ -12,6 +12,14 @@ The simulation company is named Loogootee Manufacturing, Inc. — a fictional pr
 
 ---
 
+## Project Status
+
+> 📋 This is an active build project. For current project state, open document revisions, pending architectural decisions, hardware status, and action items see the living project document:
+>
+> **[Project Status and Open Revisions](project_management/loogootee_mfg_project_status_and_open_revisions.docx)**
+
+---
+
 ## Platform Summary
 
 | | |
