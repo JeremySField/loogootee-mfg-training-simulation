@@ -6,7 +6,7 @@
 
 ## Overview
 
-A purpose-built industrial automation training platform simulating a two-site precision metal stamping operation. The project covers multi-vendor PLC programming, IIoT architecture, data infrastructure, and predictive maintenance — running 11 controllers across 5 vendors, 14 communication protocols, and a complete five-layer IIoT data stack.
+A purpose-built industrial automation training platform simulating a two-site precision metal stamping operation. The project covers multi-vendor PLC programming, IIoT architecture, data infrastructure, and predictive maintenance — running 11 controllers across 5 vendors, 13 communication protocols, and a complete five-layer IIoT data stack.
 
 The simulation company is named Loogootee Manufacturing, Inc. — a fictional precision metal stamping operation with facilities in Loogootee, Illinois (Site 1) and a remote packaging site (Site 2).
 
@@ -18,7 +18,7 @@ The simulation company is named Loogootee Manufacturing, Inc. — a fictional pr
 |---|---|
 | **Controllers** | 11 across 5 vendors |
 | **Vendors** | Allen-Bradley · Siemens · Beckhoff · Opto22 · Wago |
-| **Protocols** | 14 — EtherNet/IP · PROFINET · PROFIBUS · EtherCAT · OPC-UA · Modbus TCP/RTU · DF1 · DH-485 · CIP · Sparkplug B · MQTT · IO-Link · CAN · CANopen |
+| **Protocols** | 13 — EtherNet/IP · PROFINET · PROFIBUS · EtherCAT · OPC-UA · Modbus TCP/RTU · DF1 · DH-485 · CIP Safety · S7 PUT/GET · Sparkplug B · MQTT · IO-Link |
 | **IIoT Stack** | Mosquitto · Node-RED · Ignition · Telegraf · InfluxDB · Grafana |
 | **Data Standard** | Sparkplug B · ISA-95 tag naming · Unified Namespace |
 | **Rack** | 42U open frame · wheeled |
@@ -85,7 +85,7 @@ Infrastructure runs on an AOOSTAR WTR Max (Ryzen 7 PRO 8845HS · 32GB DDR5) runn
 |---|---|---|
 | 1 | All 11 controllers programmed — simulation running — data to UNS | In Progress |
 | 2 | Grafana dashboards · InfluxDB historian · OEE visible in real time | Planned |
-| 3 | Two-rack split — OT rack and IIoT rack | Planned |
+| 3 | Operator panel rack — mobile demonstration unit · groov EPIC · HMIs · IO-Link pump module | Planned |
 | 4 | IO-Link smart sensors — IFM AL1590 master — pump module | Planned |
 | 5 | MaintainX CMMS integration — predictive maintenance — auto work orders | Planned |
 | 6 | WireGuard VPN · webcam · remote multi-site demonstration | Planned |
@@ -96,6 +96,8 @@ Infrastructure runs on an AOOSTAR WTR Max (Ryzen 7 PRO 8845HS · 32GB DDR5) runn
 
 ```
 loogootee-mfg-training-simulation/
+│
+├── project_management/              # Living project status · open revisions · decisions
 │
 ├── 03_Architecture/
 │   ├── IIoT_Architecture/           # Data layer architecture · ADR
@@ -128,6 +130,7 @@ loogootee-mfg-training-simulation/
 
 | Document | Description |
 |---|---|
+| Project Status and Open Revisions | Living document — current project state · open revisions · pending decisions · action items |
 | IIoT Architecture Decision Record | Nine ADRs — architectural decisions with rationale and rejected alternatives |
 | IIoT Data Layer Architecture | Hardware inventory · software stack · data flow · credential structure |
 | ISA-95 Tag Naming Standard | Two-tier naming convention — Tier 1 RSLogix 500 · Tier 2 UNS |
