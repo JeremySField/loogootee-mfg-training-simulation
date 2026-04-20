@@ -109,50 +109,51 @@ The project is executed under a phase-gated discipline. Each phase has defined e
 ```
 loogootee-mfg-training-simulation/
 │
-├── project_management/              # Living project status · open revisions · phase gate criteria
+├── project_management/
+│   └── project_management_tools/
 │
-├── 03_Architecture/
-│   ├── IIoT_Architecture/           # Data layer architecture · ADR
-│   ├── Infrastructure_Architecture/ # NAS · Proxmox · network
-│   └── UNS_Architecture/            # UNS diagram · topology
+├── 00_company_profile/
 │
-├── 04_Program_Specifications/       # PLC program specs per controller
+├── 01_project_scope/
 │
-├── 05_Programs/                     # PLC program files
-│   ├── Allen_Bradley/
-│   ├── Siemens/
-│   ├── Beckhoff/
-│   ├── Opto22/
-│   └── Wago/
+├── 02_standards/
 │
-├── 06_Rack_Documentation/           # Hardware register · phased plan · operations
+├── 03_architecture/
+│   ├── iiot_architecture/
+│   ├── maintainx_architecture/
+│   ├── network_architecture/
+│   ├── uns_architecture/
+│   └── wms_lot_traceability_architecture/
 │
-├── 07_Standards/                    # ISA-95 naming standard · UNS subscription register
+├── 04_program_specifications/
+│   ├── plc_micro850/
+│   └── plc_micrologix1000/
 │
-├── 08_IO_Link_Implementation/       # IFM AL1590 · pump module · vendor docs
+├── 05_IIoT_configuration/
+│   ├── grafana/
+│   ├── ignition/
+│   ├── influxdb/
+│   ├── mqtt_mosquitto_broker/
+│   └── node-red_flows/
 │
-├── 09_MaintainX_Implementation/     # CMMS integration concept · API architecture
+├── 06_rack_documentation/
+│   ├── rack_documentation_package/
+│   ├── rack_operations_manual/
+│   ├── rack_phased_development_plan/
+│   └── rack_photos/
+│
+├── 07_preface/
+│
+├── 08_io_link_implementation/
+│   ├── ifm_al1590_vendor_docs_programming/
+│   └── io_link_pump_module_concept/
+│
+├── 09_maintainx_implementation/
+│
+├── 10_nas_implementation/
 │
 └── README.md
 ```
-
----
-
-## Document Family
-
-| Document | Description |
-|---|---|
-| Project Status and Open Revisions | Living document — current project state · open revisions · pending decisions · eight-phase gate criteria |
-| IIoT Architecture Decision Record | Nine ADRs — architectural decisions with rationale and rejected alternatives |
-| IIoT Data Layer Architecture | Hardware inventory · software stack · data flow · credential structure |
-| ISA-95 Tag Naming Standard | Two-tier naming convention — Tier 1 RSLogix 500 · Tier 2 UNS |
-| UNS Subscription Register | Full topic hierarchy for both sites |
-| Rack Phased Development Plan | Eight-phase development roadmap with gate structure and status |
-| NAS Infrastructure Implementation | AOOSTAR platform · Proxmox · VM allocation |
-| IO-Link Pump Module Concept | Three integration patterns · predictive maintenance demonstration |
-| MaintainX Implementation Concept | API architecture · Node-RED flows · work order automation |
-| MicroLogix 1000 Program Spec | Stamping press program specification |
-| Pi Broker Configuration | Mosquitto setup · credentials · security · recovery procedure |
 
 ---
 
