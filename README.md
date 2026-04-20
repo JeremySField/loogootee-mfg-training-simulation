@@ -14,7 +14,7 @@ The simulation company is named Loogootee Manufacturing, Inc. — a fictional pr
 
 ## Project Status
 
-> 📋 This is an active build project. For current project state, open document revisions, pending architectural decisions, hardware status, and action items see the living project document:
+> 📋 This is an active build project. For current project state, open document revisions, pending architectural decisions, hardware status, action items, and phase gate criteria see the living project document:
 >
 > **[Project Status and Open Revisions](project_management/loogootee_mfg_project_status_and_open_revisions.docx)**
 
@@ -89,14 +89,18 @@ Infrastructure runs on an AOOSTAR WTR Max (Ryzen 7 PRO 8845HS · 32GB DDR5) runn
 
 ## Phased Development Plan
 
-| Phase | Focus | Status |
+| Gate | Phase | Status |
 |---|---|---|
-| 1 | All 11 controllers programmed — simulation running — data to UNS | In Progress |
-| 2 | Grafana dashboards · InfluxDB historian · OEE visible in real time | Planned |
-| 3 | Operator panel rack — mobile demonstration unit · groov EPIC · HMIs · IO-Link pump module | Planned |
-| 4 | IO-Link smart sensors — IFM AL1590 master — pump module | Planned |
-| 5 | MaintainX CMMS integration — predictive maintenance — auto work orders | Planned |
-| 6 | WireGuard VPN · webcam · remote multi-site demonstration | Planned |
+| G0 | Project Initiation and Architecture Definition | Complete |
+| G1 | Controller Commissioning and UNS Integration | In Progress |
+| G2 | IIoT Stack Deployment and Network Security | Planned |
+| G3 | Production Visibility and Historian | Planned |
+| G4 | Physical System Expansion and UNS Extensibility | Planned |
+| G5 | IO-Link Smart Sensors and Process Integration | Planned |
+| G6 | Predictive Maintenance and Remote Demonstration | Planned |
+| G7 | Independence Validation and Project Closeout | Planned |
+
+The project is executed under a phase-gated discipline. Each phase has defined entry criteria that must be satisfied before the next phase is authorized to begin. Full gate criteria are documented in the [living project document](project_management/loogootee_mfg_project_status_and_open_revisions.docx).
 
 ---
 
@@ -105,7 +109,7 @@ Infrastructure runs on an AOOSTAR WTR Max (Ryzen 7 PRO 8845HS · 32GB DDR5) runn
 ```
 loogootee-mfg-training-simulation/
 │
-├── project_management/              # Living project status · open revisions · decisions
+├── project_management/              # Living project status · open revisions · phase gate criteria
 │
 ├── 03_Architecture/
 │   ├── IIoT_Architecture/           # Data layer architecture · ADR
@@ -138,12 +142,12 @@ loogootee-mfg-training-simulation/
 
 | Document | Description |
 |---|---|
-| Project Status and Open Revisions | Living document — current project state · open revisions · pending decisions · action items |
+| Project Status and Open Revisions | Living document — current project state · open revisions · pending decisions · eight-phase gate criteria |
 | IIoT Architecture Decision Record | Nine ADRs — architectural decisions with rationale and rejected alternatives |
 | IIoT Data Layer Architecture | Hardware inventory · software stack · data flow · credential structure |
 | ISA-95 Tag Naming Standard | Two-tier naming convention — Tier 1 RSLogix 500 · Tier 2 UNS |
 | UNS Subscription Register | Full topic hierarchy for both sites |
-| Rack Phased Development Plan | Six-phase development roadmap with status |
+| Rack Phased Development Plan | Eight-phase development roadmap with gate structure and status |
 | NAS Infrastructure Implementation | AOOSTAR platform · Proxmox · VM allocation |
 | IO-Link Pump Module Concept | Three integration patterns · predictive maintenance demonstration |
 | MaintainX Implementation Concept | API architecture · Node-RED flows · work order automation |
@@ -154,7 +158,7 @@ loogootee-mfg-training-simulation/
 
 ## Learning Objectives
 
-This project covers the following areas across its six phases:
+This project covers the following areas across its eight phases:
 
 - Multi-vendor PLC programming — Allen-Bradley, Siemens, Beckhoff, Opto22, Wago
 - Industrial communication protocols — EtherNet/IP, PROFINET, PROFIBUS, EtherCAT, OPC-UA, Modbus, DF1
@@ -163,7 +167,9 @@ This project covers the following areas across its six phases:
 - Edge computing — Node-RED protocol bridging, data contextualization
 - IO-Link smart sensors — device integration, process monitoring
 - Predictive maintenance — vibration baseline, threshold detection, automated work orders
-- Remote access — VPN, secure tunnel, multi-site demonstration
+- Remote access — Tailscale VPN mesh, secure tunnel, multi-site demonstration
+- System extensibility — adding new equipment to a live UNS without reconfiguration
+- Independence validation — documentation-driven independent system extension
 
 ---
 
