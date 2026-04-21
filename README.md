@@ -52,8 +52,8 @@ The simulation company is named Loogootee Manufacturing, Inc. — a fictional pr
 | Micro850 | Allen-Bradley | Palletizer | EtherNet/IP |
 | CompactLogix L24ER | Allen-Bradley | Wash Process | EtherNet/IP |
 | GuardLogix + Point I/O | Allen-Bradley | Wash Safety | EtherNet/IP |
-| S7-1200 #1 + ET200SP | Siemens | Inspection | PROFINET |
-| S7-1200 #2 + ET200SP | Siemens | Conveyor | PROFINET / PROFIBUS |
+| S7-1200 #1 + ET200SP | Siemens | Inspection | PROFINET / S7 PUT/GET |
+| S7-1200 #2 + ET200SP | Siemens | Conveyor | PROFINET / PROFIBUS / S7 PUT/GET |
 | Beckhoff CX5120 + EK1100 | Beckhoff | High Speed Forming | EtherCAT / OPC-UA |
 | groov EPIC-PR1 | Opto22 | Line Supervisor / Edge Device | Native MQTT / Sparkplug B |
 
