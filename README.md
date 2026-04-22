@@ -112,29 +112,30 @@ loogootee-mfg-training-simulation/
 ├── project_management/
 │   └── project_management_tools/
 │
-├── 00_company_profile/
+├── 00_preface/
 │
-├── 01_project_scope/
+├── 01_company_profile/
 │
-├── 02_standards/
+├── 02_project_scope/
 │
-├── 03_architecture/
+├── 03_phase_gates/
+│   ├── g0_project_initiation_and_architecture_definition/
+│   ├── g1_controller_commissioning_and_uns_integration/
+│   ├── g2_iiot_stack_deployment_and_network_security/
+│   ├── g3_production_visibility_and_historian/
+│   ├── g4_physical_system_expansion_and_uns_extensibility/
+│   ├── g5_io_link_smart_sensors_and_process_integration/
+│   ├── g6_predictive_maintenance_and_remote_demonstration/
+│   └── g7_independence_validation_and_project_closeout/
+│
+├── 04_standards/
+│
+├── 05_architecture/
 │   ├── iiot_architecture/
 │   ├── maintainx_architecture/
 │   ├── network_architecture/
 │   ├── uns_architecture/
 │   └── wms_lot_traceability_architecture/
-│
-├── 04_program_specifications/
-│   ├── plc_micro850/
-│   └── plc_micrologix1000/
-│
-├── 05_IIoT_configuration/
-│   ├── grafana/
-│   ├── ignition/
-│   ├── influxdb/
-│   ├── mqtt_mosquitto_broker/
-│   └── node-red_flows/
 │
 ├── 06_rack_documentation/
 │   ├── rack_documentation_package/
@@ -142,15 +143,24 @@ loogootee-mfg-training-simulation/
 │   ├── rack_phased_development_plan/
 │   └── rack_photos/
 │
-├── 07_preface/
+├── 07_program_specifications/
+│   ├── plc_micro850/
+│   └── plc_micrologix1000/
 │
-├── 08_io_link_implementation/
+├── 08_IIoT_configuration/
+│   ├── grafana/
+│   ├── ignition/
+│   ├── influxdb/
+│   ├── mqtt_mosquitto_broker/
+│   └── node-red_flows/
+│
+├── 09_io_link_implementation/
 │   ├── ifm_al1590_vendor_docs_programming/
 │   └── io_link_pump_module_concept/
 │
-├── 09_maintainx_implementation/
+├── 10_maintainx_implementation/
 │
-├── 10_nas_implementation/
+├── 11_nas_implementation/
 │
 └── README.md
 ```
